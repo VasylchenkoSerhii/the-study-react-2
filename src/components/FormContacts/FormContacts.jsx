@@ -1,5 +1,4 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
-import * as yup from 'yup';
+import { Formik, Form, Field } from "formik";
 
 export const FormContacts = () => {
     const initialValues = {
