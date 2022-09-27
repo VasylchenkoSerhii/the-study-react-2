@@ -4,13 +4,18 @@ import { FeedbackOptions } from "components/FeedbackOptions/FeedbackOptions";
 import { Statistics } from "components/Statistics/Statistics";
 import { Notification } from "components/Notification/Notification";
 import { Box } from "components/Box/Box";
+import { FormContacts } from "components/FormContacts/FormContacts";
 
 
 export class App extends Component {
   state = {
     good: 0,
     neutral: 0,
-    bad: 0
+    bad: 0,
+    contactsList: {
+      contacts: [],
+      name: '',
+    },
   };
 
   onLeaveFeedback = propertyName => {
@@ -56,6 +61,9 @@ export class App extends Component {
                 positivePercentage={positivePercentage}
               /> 
             : <Notification message="There is no feedback" />}
+        </Section>
+        <Section title="Contacts">
+            <FormContacts />
         </Section>
       </Box>
     );

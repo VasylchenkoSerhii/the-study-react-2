@@ -1,6 +1,9 @@
 export const theme = {
   colors: {
     black: '#000',
+    borderBtn: '#DAA520',
+    bgButton: '#F5EFE1',
+    button: '#B8860B',
     white: '#fff',
     green: '#00ff00',
     red: '#ff0000',

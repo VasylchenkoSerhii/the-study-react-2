@@ -1,7 +1,15 @@
-export const Notification = ({message}) => {
+import { Box } from "components/Box/Box";
+import { Message } from "./Notification.styled";
+
+export const Notification = ({ message }) => {
     return (
-        <>
-            <p>{message}</p>
-        </>
+        <Box
+            width="65%"
+            ml="auto"
+            mr="auto"
+            textAlign="center"
+        >
+            <Message>{message}</Message>
+        </Box>
     );
 };
