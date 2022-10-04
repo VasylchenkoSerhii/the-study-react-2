@@ -2,6 +2,7 @@ import { Box } from "components/Box/Box";
 import { FeedbackButton } from "./FeedbackOptions.styled";
 
 export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
+    
     const typeFeedback = Object.keys(options);
     return (
         <Box
